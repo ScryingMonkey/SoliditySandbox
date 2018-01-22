@@ -1,5 +1,15 @@
 {
+  "name": "Inbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
-    "solc": "^0.4.19"
+    "ganache-cli": "^6.0.3",
+    "make": "^0.8.1",
+    "mocha": "^5.0.0",
+    "solc": "^0.4.19",
+    "web3": "^1.0.0-beta.26"
   }
 }
