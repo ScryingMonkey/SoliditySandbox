@@ -8,6 +8,9 @@ const { interface, bytecode } = require('../compile');
 
 const INITIAL_MSG = "Hi There.";
 
+// Test Ethereum Network (Rinkeby): https://rinkeby.infura.io/U9B2FNPYF6rBeWqCTMEZ 
+// Main Ethereum Network: https://mainnet.infura.io/U9B2FNPYF6rBeWqCTMEZ 
+
 let accounts;
 let inbox;
 
@@ -22,7 +25,7 @@ beforeEach(async () => {
     inbox.setProvider(provider);
 });
 
-describe('Testing [Inbox.sol] contract:', () => {
+describe('Testing [Inbox.sol] contract on [' +provider+ '] provider:', () => {
     it('it compiles', () => {
         assert.ok(interface);
     });
